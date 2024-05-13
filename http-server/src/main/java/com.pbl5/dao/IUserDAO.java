@@ -9,6 +9,10 @@ import java.util.List;
 public interface IUserDAO {
     User findByUserNameAndPasswordAndStatus(String userName, String password, Integer status);
     User findByEmail(String email,int roleId);
+
+
+
+
     void save(User user);
     List<User> findAllUserPagination(UserPaginationDTO dto);
     Integer countAllUser();
