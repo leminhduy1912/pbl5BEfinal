@@ -6,6 +6,9 @@ import com.pbl5.models.Movie;
 
 public interface IMovieService {
     Message findAllMovieIsShowing();
+
+
+
     Message findAllMovieIsShowing(MoviePaginationDTO dto);
 
     Message createMovie(Movie movie,String username);
