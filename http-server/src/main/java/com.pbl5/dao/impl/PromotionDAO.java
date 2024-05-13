@@ -12,6 +12,9 @@ public class PromotionDAO extends AbstractDAO<Promotion> implements IPromotionDA
     private static final Logger logger = Logger.getLogger("Promotion DAO");
     @Override
     public List<Promotion> findAll() {
+
+
+
         logger.info("Find all promotion ");
         String sql="SELECT * FROM promotions";
         return query(sql,new PromotionMapper());
