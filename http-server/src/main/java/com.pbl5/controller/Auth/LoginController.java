@@ -27,8 +27,13 @@ public class LoginController extends HttpServlet {
 //    @Inject
     private static final IAuthService authService = new AuthService();
 
+
+
+
+
+
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req    , HttpServletResponse resp) throws ServletException, IOException {
         UserSignInDTO dto = Http.paramsToString(req.getParameterMap()).toModel(UserSignInDTO.class);
 
         ErrorHandler.handle(resp, () -> authService.Login(dto));

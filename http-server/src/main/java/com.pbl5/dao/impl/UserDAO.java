@@ -25,6 +25,10 @@ public class UserDAO extends AbstractDAO<User> implements IUserDAO {
         return null;
     }
 
+
+
+
+
     @Override
     public User findByEmail(String email,int roleId) {
         logger.info("Find By Email");
