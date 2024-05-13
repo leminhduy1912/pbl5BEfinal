@@ -25,6 +25,11 @@ import static com.pbl5.utils.constants.Endpoint.V1;
 @WebServlet(urlPatterns = {V1 + AUTH + "/register"})
 @MultipartConfig
 public class RegisterController extends HttpServlet {
+
+
+
+
+
     private static final long serialVersionUID = 5425347944387647554L;
 
     private static final IAuthService authService = new AuthService();
