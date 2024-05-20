@@ -22,6 +22,7 @@ public class Controller {
         return "index";
     }
     @CrossOrigin(origins = "*", maxAge = 3600)
+    // checkout server
     @PostMapping("/submitOrder")
     public ResponseEntity<String> submitOrder(@RequestParam("amount") int orderTotal,
                                               @RequestParam("orderInfo") String orderInfo,
