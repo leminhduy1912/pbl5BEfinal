@@ -13,6 +13,7 @@ public interface IBookingService {
     Message findSeatAndStatusByShowTimeId(String showTimeId);
     Message changeStatus(String bookingId, String status);
     Message deleteBooking(String bookingId);
+    // find all booking from user
     Message findByUserId(BookingPaginationDTO booking);
 
      Message orderReturn(String orderInfo,String paymentTime,String transactionId,String totalPrice,int status);

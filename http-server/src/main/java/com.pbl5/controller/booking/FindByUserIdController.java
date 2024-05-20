@@ -23,7 +23,7 @@ import static com.pbl5.utils.constants.Endpoint.V1;
 @MultipartConfig
 public class FindByUserIdController extends HttpServlet {
     private IBookingService bookingService = new BookingService();
-
+    // find all booking from user
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         BookingPaginationDTO booking = Http.paramsToString(req.getParameterMap()).toModel(BookingPaginationDTO.class);
