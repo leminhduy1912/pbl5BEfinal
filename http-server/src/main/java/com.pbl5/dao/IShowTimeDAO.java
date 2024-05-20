@@ -9,6 +9,7 @@ import java.util.List;
 public interface IShowTimeDAO {
      List<ShowTime> getShowTimeByMovieIdAndDate(String movieId, String dateShow);
      void  createShowTime(ShowTime showTime,String username );
+     // find fixture
      List<ShowTime> findByMovieIdAndDateShow(String movieId,String dateShow);
      List<ShowTime> findAllAPagination(ShowTimePaginationDTO dto);
      void update(ShowTime dto);

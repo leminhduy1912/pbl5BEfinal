@@ -21,6 +21,7 @@ import static com.pbl5.utils.constants.Endpoint.V1;
 @MultipartConfig
 public class GetShowTimeController extends HttpServlet {
     private IShowTimeService showTimeService = new ShowTimeService();
+    // find fixture
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         ShowTime showTime = Http.paramsToString(req.getParameterMap()).toModel(ShowTime.class);

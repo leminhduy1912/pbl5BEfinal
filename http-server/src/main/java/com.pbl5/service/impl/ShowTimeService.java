@@ -24,6 +24,7 @@ import static com.pbl5.utils.constants.Pagination.PER_PAGE;
 
 public class ShowTimeService implements IShowTimeService {
     private IShowTimeDAO showTimeDAO = new ShowTimeDAO();
+    // find fixture
     @Override
     public Message findByMovieIdAndDateShow(String movieId, String dateShow) {
         List<ShowTime> result = showTimeDAO.findByMovieIdAndDateShow(movieId, dateShow);
