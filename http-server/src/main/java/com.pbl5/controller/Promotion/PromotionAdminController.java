@@ -32,6 +32,7 @@ public class PromotionAdminController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Promotion promotion = Http.paramsToString(req.getParameterMap()).toModel(Promotion.class);
+        System.out.println(req.getPart("image"));
         String path = SaveFile.save(req, "image");
         promotion.setImage(path);
         ErrorHandler.handle(resp, () -> promotionService.createPromotion(promotion, req.getHeader("username")));

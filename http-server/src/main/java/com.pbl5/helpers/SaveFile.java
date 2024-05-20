@@ -37,6 +37,7 @@ public class SaveFile {
             outputStream.write(bytes);
             outputStream.close();
             logger.info("saved image");
+            System.out.println("path "+path);
             return path;
 
         } catch (IOException | ServletException e) {

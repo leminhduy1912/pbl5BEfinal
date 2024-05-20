@@ -14,6 +14,7 @@ public class PromotionMapper implements IMapper<Promotion>{
         promotion.setImage(result.getString("image"));
         promotion.setTitle(result.getString("title"));
         promotion.setId(result.getString("promotion_id"));
+        promotion.setStatus(result.getString("status"));
         return promotion;
     }
 }

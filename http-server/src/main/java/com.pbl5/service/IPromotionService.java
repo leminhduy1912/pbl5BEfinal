@@ -12,4 +12,5 @@ public interface IPromotionService {
     Message findOneById(String id);
     Message findAllImage();
     Message createPromotion(Promotion promotion,String username);
+    Message updatePromotion(Promotion promotion);
 }

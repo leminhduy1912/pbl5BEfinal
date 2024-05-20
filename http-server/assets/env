@@ -3,5 +3,5 @@ DB_URL=localhost:3306
 DB_NAME=pbl5
 USER_NAME=root
 PASSWORD=Duyphuc1912@
-IMAGE_FOLDER=C:\Users\minhd\OneDrive\Desktop\PBL5\test\test6thang4\images
+IMAGE_FOLDER=C:\Users\minhd\OneDrive\Desktop\movie-ticket-be\http-server\images
 FRONT_END_URL=http://127.0.0.1:5173

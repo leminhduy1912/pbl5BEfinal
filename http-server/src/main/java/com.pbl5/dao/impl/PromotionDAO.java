@@ -44,6 +44,18 @@ public class PromotionDAO extends AbstractDAO<Promotion> implements IPromotionDA
 
     @Override
     public void updatePromotion(Promotion promotion) {
+        String sql="";
+        if (promotion.getImage()==null){
+            sql = "UPDATE promotions SET clause=?,description=?,title=?,image=?,status=?" +
+                    "WHERE promotion_id = ?";
+            update(sql,promotion.getClause(),promotion.getDescription()
+                    ,promotion.getTitle(),promotion.getImage(),promotion.getStatus(),promotion.getId());
+        } else {
+            sql = "UPDATE promotions SET clause=?,description=?,title=?,status=?" +
+                    "WHERE promotion_id = ?";
+            update(sql,promotion.getClause(),promotion.getDescription()
+                    ,promotion.getTitle(),promotion.getStatus(),promotion.getId());
+        }
 
     }
 

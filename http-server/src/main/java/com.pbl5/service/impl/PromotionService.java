@@ -91,4 +91,16 @@ public class PromotionService implements IPromotionService {
 
         }
     }
+
+    @Override
+    public Message updatePromotion(Promotion promotion) {
+        try {
+            promotionDAO.updatePromotion(promotion);
+            Meta meta = new Meta.Builder(HttpServletResponse.SC_OK).withMessage(Response.SUCCESS).build();
+            return new Message.Builder(meta).build();
+        } catch (Exception e) {
+            Meta meta = new Meta.Builder(HttpServletResponse.SC_INTERNAL_SERVER_ERROR).withMessage(Response.CREATE_FAILED).build();
+            return new Message.Builder(meta).build();
+        }
+    }
 }
