@@ -22,7 +22,7 @@ public class BookingDAO extends AbstractDAO<Booking> implements IBookingDAO {
                     booking.getTotalAmount(), booking.getBookingDate(), booking.getSeatId(),booking.getStatus());
 
     }
-
+    // checkStatusSeatByShowTimeId
     @Override
     public List<Booking> findSeatAndStatusByShowTimeId(String showtimeId) {
         String sql="SELECT s.seatNum,b.status FROM bookings as b " +
