@@ -92,7 +92,7 @@ public class BookingService implements IBookingService {
             return new Message.Builder(meta).build();
         }
     }
-
+    // find all booking from user
     @Override
     public Message findByUserId(BookingPaginationDTO booking) {
         BookingPaginationDTO domain = Http.objectMapper(booking, BookingPaginationDTO.class);

@@ -15,6 +15,7 @@ public interface IBookingDAO {
     void changeStatus(String bookingId,String status);
     void deleteBooking(String id);
     Booking findOne(String id);
+    // find all booking from user
     List<Booking> findAllBookingFromUser(BookingPaginationDTO booking);
     Integer countAllBooking();
 //    List<Booking>

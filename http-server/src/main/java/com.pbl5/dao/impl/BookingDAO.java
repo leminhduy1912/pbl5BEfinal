@@ -57,7 +57,7 @@ public class BookingDAO extends AbstractDAO<Booking> implements IBookingDAO {
         List<Booking> result = query(sql,new BookingMapper(),id);
         return result.isEmpty()? null: result.get(0);
     }
-
+    // find all booking from user
     @Override
     public List<Booking> findAllBookingFromUser(BookingPaginationDTO booking) {
         String sql = "SELECT b.*,m.title AS movieName,s.seatNum ,s.seatNum AS seatName,sh.startTime," +
