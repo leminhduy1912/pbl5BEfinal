@@ -54,7 +54,7 @@ public class BookingService implements IBookingService {
            }
        }
     }
-
+    // checkStatusSeatByShowTimeId
     @Override
     public Message findSeatAndStatusByShowTimeId(String showTimeId) {
 

@@ -10,6 +10,7 @@ import java.util.List;
 public interface IBookingDAO {
     void createBooking(Booking booking);
     List<Booking> findSeatAndStatusByShowTimeId(String showtimeId);
+    // checkStatusSeatByShowTimeId
     Booking checkStatusSeatByShowTimeId(Booking booking);
     void changeStatus(String bookingId,String status);
     void deleteBooking(String id);

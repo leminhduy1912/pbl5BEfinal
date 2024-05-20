@@ -25,7 +25,7 @@ import static com.pbl5.utils.constants.Endpoint.V1;
 @MultipartConfig
 public class BookingController extends HttpServlet {
     private IBookingService bookingService = new BookingService();
-
+    // checkStatusSeatByShowTimeId
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Booking booking = Http.paramsToString(req.getParameterMap()).toModel(Booking.class);
