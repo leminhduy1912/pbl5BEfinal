@@ -20,6 +20,7 @@ public interface IUserDAO {
     List<User> findAllUserPagination(UserPaginationDTO dto);
     Integer countAllUser();
     void update(User user);
+    //reser password
     void resetPassword(String password,String userId);
     void userResetPassword(String password,String email);
     void updatePoint (User user);

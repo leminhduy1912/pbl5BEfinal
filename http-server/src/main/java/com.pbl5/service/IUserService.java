@@ -12,6 +12,7 @@ public interface IUserService {
 
     Message findAllUserPagination(UserPaginationDTO dto);
     Message updateUser(User user);
+    //reser password
     Message resetPassword (User user);
     Message userResetPassword(User user);
     Message findByEmail(User user);
