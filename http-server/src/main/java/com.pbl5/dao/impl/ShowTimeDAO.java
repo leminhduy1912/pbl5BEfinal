@@ -27,7 +27,7 @@ public class ShowTimeDAO extends AbstractDAO<ShowTime> implements IShowTimeDAO {
         insert(sql,showTime.getId(),showTime.getMovieId(),showTime.getTheaterId(),showTime.getTimeStart()
                 ,showTime.getTimeEnd(),showTime.getDateShow(),1,showTime.getCreatedAt(),username);
     }
-
+// find fixture
     @Override
     public List<ShowTime> findByMovieIdAndDateShow(String movieId, String dateShow) {
 
