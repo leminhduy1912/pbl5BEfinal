@@ -67,7 +67,7 @@ public class UserDAO extends AbstractDAO<User> implements IUserDAO {
         update(sql,user.getPoint(),user.getFirstName(),user.getLastName()
                 ,user.getPhoneNumber(),user.getStatus(),user.getGender(),user.getAddress(),user.getId());
     }
-
+    //reser password
     @Override
     public void resetPassword(String password,String userId) {
         String sql="UPDATE users SET password = ? WHERE user_id = ?";

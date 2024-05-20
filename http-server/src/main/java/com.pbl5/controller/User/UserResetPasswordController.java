@@ -22,6 +22,7 @@ import static com.pbl5.utils.constants.Endpoint.V1;
 @MultipartConfig
 public class UserResetPasswordController extends HttpServlet {
     private IUserService userService = new UserService();
+    //reser password
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         User dto = Http.paramsToString(req.getParameterMap()).toModel(User.class);
