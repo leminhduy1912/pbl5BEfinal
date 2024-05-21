@@ -23,6 +23,8 @@ public class PromotionService implements IPromotionService {
     private IPromotionDAO promotionDAO = new PromotionDAO();
     @Override
     public Message findAll() {
+
+
         try {
             List<Promotion> promotions = promotionDAO.findAll();
             Meta meta = new Meta.Builder(HttpServletResponse.SC_OK).withMessage(Response.SUCCESS).build();

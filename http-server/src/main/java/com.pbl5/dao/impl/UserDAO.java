@@ -25,6 +25,10 @@ public class UserDAO extends AbstractDAO<User> implements IUserDAO {
         return null;
     }
 
+
+
+
+
     @Override
     public User findByEmail(String email,int roleId) {
         logger.info("Find By Email");
@@ -42,7 +46,11 @@ public class UserDAO extends AbstractDAO<User> implements IUserDAO {
         //register
         // TODO Auto-generated method stub
         logger.info("Save User");
+
+
+
         String sql = "INSERT INTO users (user_id," + "role_id,"  + "email," + "point," + "status,"+"last_name,"+"first_name,"+"phonenumber,"+"gender,"+"address," + "password," + "createdAt," +"date_of_birth, "  + "createdBy)" + " VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+
 
         insert(sql, user.getId(), 2, user.getEmail(), user.getPoint(), 1,user.getLastName(),user.getFirstName(),user.getPhoneNumber(),user.getGender(),user.getAddress(), user.getPassword(), user.getCreatedAt(),user.getDateOfBirth(), user.getCreatedBy());
     }

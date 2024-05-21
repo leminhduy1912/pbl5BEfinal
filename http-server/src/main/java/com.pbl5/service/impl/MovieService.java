@@ -27,6 +27,9 @@ public class MovieService implements IMovieService {
 
     @Override
     public Message findAllMovieIsShowing() {
+
+
+
         List<Movie> results = iMovieDAO.findAllMovieIsShowing();
 
         Meta meta = new Meta.Builder(HttpServletResponse.SC_OK).withMessage(Response.SUCCESS).build();

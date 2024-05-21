@@ -6,6 +6,9 @@ import java.util.List;
 
 public interface IPromotionDAO {
     List<Promotion> findAll();
+
+
+
     Promotion findOneById(String id);
     List<Promotion> findAllImage();
     void createPromotion(Promotion promotion,String username);
