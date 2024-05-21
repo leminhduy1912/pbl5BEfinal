@@ -39,6 +39,7 @@ public class UserDAO extends AbstractDAO<User> implements IUserDAO {
 
     @Override
     public void save(User user) {
+        //register
         // TODO Auto-generated method stub
         logger.info("Save User");
         String sql = "INSERT INTO users (user_id," + "role_id,"  + "email," + "point," + "status,"+"last_name,"+"first_name,"+"phonenumber,"+"gender,"+"address," + "password," + "createdAt," +"date_of_birth, "  + "createdBy)" + " VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)";

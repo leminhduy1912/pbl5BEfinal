@@ -73,6 +73,7 @@ public class AuthService implements IAuthService {
     @Override
     public Message Register(UserDTO dto) throws DuplicateEntryException, CreateFailedException, UnexpectedException, NotFoundException, InvalidCredentialsException {
         User isEmailExist = iUserDAO.findByEmail(dto.getEmail(),dto.getRoleId());
+        //register
         if (isEmailExist != null)
             throw new DuplicateEntryException(Response.EMAIL_IN_USE);
         User domain = Http.objectMapper(dto, User.class);
