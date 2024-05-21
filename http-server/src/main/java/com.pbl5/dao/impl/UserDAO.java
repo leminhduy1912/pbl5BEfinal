@@ -73,6 +73,7 @@ public class UserDAO extends AbstractDAO<User> implements IUserDAO {
         return pages.isEmpty() ? null : pages.get(0);
     }
 
+    // admin update user
     @Override
     public void update(User user) {
         String sql="UPDATE users SET point=?,first_name=?,last_name=?,phoneNumber=?" +

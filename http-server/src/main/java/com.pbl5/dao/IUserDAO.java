@@ -20,6 +20,7 @@ public interface IUserDAO {
     // manage all user from admin
     List<User> findAllUserPagination(UserPaginationDTO dto);
     Integer countAllUser();
+    // admin update user
     void update(User user);
     //reser password
     // admin reset password for user
