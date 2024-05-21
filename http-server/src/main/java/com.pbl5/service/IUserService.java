@@ -10,7 +10,7 @@ public interface IUserService {
     // manage all user for admin
     Message findAllUserPagination(UserPaginationDTO dto);
     Message updateUser(User user);
-    //reser password
+    //admin reset password
     Message resetPassword (User user);
     Message userResetPassword(User user);
     Message findByEmail(User user);

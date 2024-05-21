@@ -53,6 +53,7 @@ public class UserService implements IUserService {
     //reser password
     @Override
     public Message resetPassword(User user) {
+        // admin reset password user
         try {
             SendEmail sm = new SendEmail();
             String randomString = generateRandomString(6);
