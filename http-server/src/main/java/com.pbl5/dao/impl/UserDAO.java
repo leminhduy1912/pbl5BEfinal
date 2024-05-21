@@ -22,6 +22,7 @@ public class UserDAO extends AbstractDAO<User> implements IUserDAO {
 
     @Override
     public User findByUserNameAndPasswordAndStatus(String userName, String password, Integer status) {
+        //login
         return null;
     }
 

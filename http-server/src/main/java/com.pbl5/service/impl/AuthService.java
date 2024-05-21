@@ -35,6 +35,7 @@ public class AuthService implements IAuthService {
 
     @Override
     public Message Login(UserSignInDTO dto) throws UnexpectedException, NotFoundException, InvalidCredentialsException {
+        //login
         if (dto.getEmail() == null || dto.getPassword() == null){
             Meta meta = new Meta.Builder(HttpServletResponse.SC_BAD_REQUEST).withMessage(Response.INVALID_EMAIL_OR_PASSWORD).build();
             return new Message.Builder(meta).build();
