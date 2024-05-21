@@ -20,6 +20,9 @@ public class MovieDAO extends AbstractDAO<Movie> implements IMovieDAO {
     private static final Logger logger = Logger.getLogger("MovieDAO");
     @Override
     public List<Movie> findAllMovieIsShowing() {
+
+
+
         logger.info("Find all movie is showing");
         String sql = "SELECT * FROM movies AS M INNER JOIN kindofmovie AS G ON M.kind_id = G.kind_id  " +
                 " WHERE M.active = 1 ";

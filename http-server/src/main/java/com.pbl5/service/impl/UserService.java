@@ -20,6 +20,9 @@ import java.util.Random;
 import static com.pbl5.utils.constants.Pagination.PER_PAGE;
 
 public class UserService implements IUserService {
+
+
+
     private IUserDAO userDAO = new UserDAO();
     // manage all user for admin
     @Override

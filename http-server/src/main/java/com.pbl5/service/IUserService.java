@@ -7,7 +7,9 @@ import com.pbl5.models.User;
 import java.util.List;
 
 public interface IUserService {
+
     // manage all user for admin
+
     Message findAllUserPagination(UserPaginationDTO dto);
     Message updateUser(User user);
     //reser password

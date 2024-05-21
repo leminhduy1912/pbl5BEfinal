@@ -7,6 +7,8 @@ import java.util.List;
 
 public interface IPromotionService {
     Message findAll();
+
+
     Message findOneById(String id);
     Message findAllImage();
     Message createPromotion(Promotion promotion,String username);

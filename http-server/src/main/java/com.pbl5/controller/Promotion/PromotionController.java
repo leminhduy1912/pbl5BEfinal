@@ -23,5 +23,7 @@ public class PromotionController extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Promotion promotion = Http.paramsToString(req.getParameterMap()).toModel(Promotion.class);
         ErrorHandler.handle(resp, () -> promotionService.findOneById(promotion.getId()));
+
+
     }
 }

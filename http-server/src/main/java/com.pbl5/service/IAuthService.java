@@ -13,6 +13,7 @@ import org.apache.hc.core5.http.NotImplementedException;
 public interface IAuthService {
     //login
     Message Login(UserSignInDTO dto) throws UnexpectedException, NotFoundException, InvalidCredentialsException;
+
     // register
     Message Register(UserDTO user) throws DuplicateEntryException, CreateFailedException, UnexpectedException, NotFoundException, InvalidCredentialsException, NotImplementedException;
 
