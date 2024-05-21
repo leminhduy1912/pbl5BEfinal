@@ -36,6 +36,8 @@ public class ReceiptService implements IReceiptService {
 
     @Override
     public Message findAllReceiptPagination(ReceiptPaginationDTO dto) {
+
+
         // find all receipt admin
      ReceiptPaginationDTO domain = Http.objectMapper(dto, ReceiptPaginationDTO.class);
        List<ReceiptDTO> results = receiptDAO.findAllReceiptWithPagination(domain);

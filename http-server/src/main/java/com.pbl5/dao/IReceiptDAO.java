@@ -7,6 +7,10 @@ import java.util.List;
 
 public interface IReceiptDAO {
     void createReceipt(ReceiptDTO receiptDTO);
+
+
+
+
     // find all receipt admin
     List<ReceiptDTO> findAllReceiptWithPagination(ReceiptPaginationDTO dto);
     Integer countAllReceipt();
