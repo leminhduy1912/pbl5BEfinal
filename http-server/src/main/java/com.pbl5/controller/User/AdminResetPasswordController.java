@@ -21,6 +21,8 @@ import static com.pbl5.utils.constants.Endpoint.V1;
 @WebServlet(urlPatterns = {V1 +ADMIN+ "/admin-reset-password"})
 @MultipartConfig
 public class AdminResetPasswordController extends HttpServlet {
+    // admin reset password for user
+
     private IUserService userService = new UserService();
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

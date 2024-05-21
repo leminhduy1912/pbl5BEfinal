@@ -22,6 +22,7 @@ public interface IUserDAO {
     Integer countAllUser();
     void update(User user);
     //reser password
+    // admin reset password for user
     void resetPassword(String password,String userId);
     void userResetPassword(String password,String email);
     void updatePoint (User user);
