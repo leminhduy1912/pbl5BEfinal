@@ -6,6 +6,9 @@ import com.pbl5.helpers.respone.Message;
 
 public interface IReceiptService {
     Message createReceipt(ReceiptDTO receiptDTO);
+
+
+
     // find all receipt admin
     Message findAllReceiptPagination(ReceiptPaginationDTO dto);
 }
