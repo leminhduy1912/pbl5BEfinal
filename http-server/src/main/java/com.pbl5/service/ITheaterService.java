@@ -5,6 +5,8 @@ import com.pbl5.helpers.respone.Message;
 import com.pbl5.models.Theater;
 
 public interface ITheaterService {
+    // room management by admin
+
     Message findAllRoomWithPagination(TheaterPaginationDTO dto);
     Message changeStatus(Theater theater);
 }

@@ -16,6 +16,8 @@ import java.util.List;
 import static com.pbl5.utils.constants.Pagination.PER_PAGE;
 
 public class TheaterService implements ITheaterService {
+    // room management by admin
+
     private ITheaterDAO theaterDAO = new TheaterDAO();
     @Override
     public Message findAllRoomWithPagination(TheaterPaginationDTO dto) {
