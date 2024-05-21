@@ -7,8 +7,12 @@ import com.pbl5.models.User;
 import java.util.List;
 
 public interface IUserDAO {
+    //login
     User findByUserNameAndPasswordAndStatus(String userName, String password, Integer status);
     User findByEmail(String email,int roleId);
+
+
+
     //register
     void save(User user);
 

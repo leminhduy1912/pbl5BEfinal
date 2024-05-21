@@ -23,6 +23,7 @@ import static com.pbl5.utils.constants.Endpoint.V1;
 @WebServlet(urlPatterns = {V1 + AUTH + "/login"})
 @MultipartConfig
 public class LoginController extends HttpServlet {
+    //login
     private static final long serialVersionUID = -975955435760814368L;
 //    @Inject
     private static final IAuthService authService = new AuthService();
