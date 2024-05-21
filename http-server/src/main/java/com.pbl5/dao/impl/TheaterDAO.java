@@ -11,6 +11,8 @@ import java.util.List;
 import static com.pbl5.utils.constants.Pagination.PER_PAGE;
 
 public class TheaterDAO extends AbstractDAO<Theater> implements ITheaterDAO {
+    // room management by admin
+
     @Override
     public List<Theater> findAllRoomWithPagination(TheaterPaginationDTO dto) {
         String sql="SELECT * FROM theaters  ORDER BY createdAt DESC LIMIT "+ PER_PAGE

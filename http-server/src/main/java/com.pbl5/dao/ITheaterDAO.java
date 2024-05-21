@@ -6,6 +6,7 @@ import com.pbl5.models.Theater;
 import java.util.List;
 
 public interface ITheaterDAO {
+    // room management by admin
     List<Theater> findAllRoomWithPagination(TheaterPaginationDTO dto);
     Integer countAllRoom();
     void changeStatus(String id,String status);

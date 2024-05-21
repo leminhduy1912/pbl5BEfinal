@@ -23,6 +23,8 @@ import static com.pbl5.utils.constants.Endpoint.V1;
 @MultipartConfig
 @WebServlet(urlPatterns = {V1 +ADMIN+ "/theater"})
 public class TheaterController extends HttpServlet {
+    // room management by admin
+
     private ITheaterService theaterService = new TheaterService();
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
