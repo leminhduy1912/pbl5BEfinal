@@ -21,6 +21,7 @@ import static com.pbl5.utils.constants.Pagination.PER_PAGE;
 
 public class UserService implements IUserService {
     private IUserDAO userDAO = new UserDAO();
+    // manage all user for admin
     @Override
     public Message findAllUserPagination(UserPaginationDTO dto) {
         UserPaginationDTO domain = Http.objectMapper(dto, UserPaginationDTO.class);

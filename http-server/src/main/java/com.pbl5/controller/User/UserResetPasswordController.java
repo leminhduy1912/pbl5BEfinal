@@ -21,6 +21,7 @@ import static com.pbl5.utils.constants.Endpoint.V1;
 @WebServlet(urlPatterns = {V1 + "/user-reset-password"})
 @MultipartConfig
 public class UserResetPasswordController extends HttpServlet {
+    // manage all user for admin
     private IUserService userService = new UserService();
     //reser password
     @Override
