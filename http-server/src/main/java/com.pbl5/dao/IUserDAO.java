@@ -15,6 +15,9 @@ public interface IUserDAO {
 
     //register
     void save(User user);
+
+
+
     List<User> findAllUserPagination(UserPaginationDTO dto);
     Integer countAllUser();
     void update(User user);
