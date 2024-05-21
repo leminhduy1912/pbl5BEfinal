@@ -24,6 +24,7 @@ import static com.pbl5.utils.constants.Endpoint.V1;
 public class UserController extends HttpServlet {
     // manage all user for admin
     private IUserService userService = new UserService();
+    // admin update user
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         User dto = Http.paramsToString(req.getParameterMap()).toModel(User.class);

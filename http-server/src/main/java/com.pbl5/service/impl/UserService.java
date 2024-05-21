@@ -37,6 +37,7 @@ public class UserService implements IUserService {
 
     @Override
     public Message updateUser(User user) {
+        // admin update user
         try {
 //            String id = IDGeneration.generate();
 //            user.setId(id);

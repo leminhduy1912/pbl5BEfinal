@@ -9,6 +9,7 @@ import java.util.List;
 public interface IUserService {
     // manage all user for admin
     Message findAllUserPagination(UserPaginationDTO dto);
+    // admin update user
     Message updateUser(User user);
     //admin reset password
     Message resetPassword (User user);
