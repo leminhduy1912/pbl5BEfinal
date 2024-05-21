@@ -43,6 +43,7 @@ public class UserDAO extends AbstractDAO<User> implements IUserDAO {
 
     @Override
     public void save(User user) {
+        //register
         // TODO Auto-generated method stub
         logger.info("Save User");
 
