@@ -21,7 +21,7 @@ public class ReceiptDAO extends AbstractDAO<ReceiptDTO> implements IReceiptDAO {
 
     @Override
     public List<ReceiptDTO> findAllReceiptWithPagination(ReceiptPaginationDTO dto) {
-
+// find all receipt admin
         String sql="SELECT r.*,u.user_id,u.email FROM pbl5.receipts as r INNER JOIN users as u on r.user_id= u.user_id ORDER BY create_at DESC LIMIT "
                 + PER_PAGE+" OFFSET "+ (dto.getPage() - 1) * PER_PAGE;
         return query(sql, new ReceiptMapper());
