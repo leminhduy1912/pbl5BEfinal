@@ -5,6 +5,8 @@ import com.pbl5.helpers.respone.Message;
 import com.pbl5.models.Movie;
 
 public interface IMovieService {
+    // room management by admin
+
     Message findAllMovieIsShowing();
     Message findAllMovieIsShowing(MoviePaginationDTO dto);
 

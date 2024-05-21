@@ -19,6 +19,8 @@ import static com.pbl5.utils.constants.Endpoint.ADMIN;
 import static com.pbl5.utils.constants.Endpoint.V1;
 
 @WebServlet(urlPatterns = {V1  + "/movie/image"})
+// room management by admin
+
 @MultipartConfig(
         fileSizeThreshold = 1024 * 1024,
         maxFileSize = 1024 * 1024 * 10,

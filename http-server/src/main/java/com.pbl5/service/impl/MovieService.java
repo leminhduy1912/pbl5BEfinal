@@ -23,6 +23,8 @@ import java.util.Map;
 import static com.pbl5.utils.constants.Pagination.PER_PAGE;
 
 public class MovieService implements IMovieService {
+    // room management by admin
+
     private final IMovieDAO iMovieDAO = new MovieDAO();
 
     @Override

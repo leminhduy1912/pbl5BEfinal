@@ -23,6 +23,8 @@ import static com.pbl5.utils.constants.Endpoint.V1;
 
 @MultipartConfig
 @WebServlet(urlPatterns = {V1  + "/movie/all"})
+// room management by admin
+
 public class FindAllMovie extends HttpServlet {
     private IMovieService movieService = new MovieService();
 

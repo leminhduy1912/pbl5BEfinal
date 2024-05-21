@@ -29,6 +29,8 @@ import static com.pbl5.utils.constants.Endpoint.*;
         maxFileSize = 1024 * 1024 * 10,
         maxRequestSize = 1024 * 1024 * 11
 )
+// room management by admin
+
 public class MovieController extends HttpServlet {
     private IMovieService movieService = new MovieService();
     private IMovieDAO movieDAO = new MovieDAO();

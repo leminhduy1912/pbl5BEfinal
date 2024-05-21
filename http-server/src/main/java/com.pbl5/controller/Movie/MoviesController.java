@@ -19,6 +19,8 @@ import java.io.IOException;
 import static com.pbl5.utils.constants.Endpoint.V1;
 
 @WebServlet(urlPatterns = {V1 + "/movies"})
+// room management by admin
+
 public class MoviesController extends HttpServlet {
     private IMovieService movieService = new MovieService();
 

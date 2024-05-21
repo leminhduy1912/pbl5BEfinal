@@ -17,6 +17,8 @@ import java.util.List;
 import java.util.logging.Logger;
 
 public class MovieDAO extends AbstractDAO<Movie> implements IMovieDAO {
+    // room management by admin
+
     private static final Logger logger = Logger.getLogger("MovieDAO");
     @Override
     public List<Movie> findAllMovieIsShowing() {
