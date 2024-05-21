@@ -26,6 +26,7 @@ public class ReceiptPaginationController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println(">>>>>> :"+req.getHeader("ACCESS_TOKEN"));
+        // find all receipt admin
         ReceiptPaginationDTO dto = Http.paramsToString(req.getParameterMap()).toModel(ReceiptPaginationDTO.class);
         ErrorHandler.handle(resp, () -> receiptService.findAllReceiptPagination(dto));
     }
