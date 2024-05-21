@@ -17,7 +17,7 @@ public interface IUserDAO {
     void save(User user);
 
 
-
+    // manage all user from admin
     List<User> findAllUserPagination(UserPaginationDTO dto);
     Integer countAllUser();
     void update(User user);

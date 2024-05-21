@@ -22,6 +22,7 @@ import static com.pbl5.utils.constants.Endpoint.V1;
 @WebServlet(urlPatterns = {V1 +ADMIN+ "/user"})
 @MultipartConfig
 public class UserController extends HttpServlet {
+    // manage all user for admin
     private IUserService userService = new UserService();
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

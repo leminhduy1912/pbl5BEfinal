@@ -21,6 +21,7 @@ import static com.pbl5.utils.constants.Endpoint.V1;
 
 @WebServlet(urlPatterns = {V1 +ADMIN+ "/users"})
 @MultipartConfig
+// manage all user for admin
 public class UserPaginationController extends HttpServlet {
     private IUserService userService = new UserService();
     @Override

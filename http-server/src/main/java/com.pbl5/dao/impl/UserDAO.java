@@ -56,6 +56,9 @@ public class UserDAO extends AbstractDAO<User> implements IUserDAO {
         insert(sql, user.getId(), 2, user.getEmail(), user.getPoint(), 1,user.getLastName(),user.getFirstName(),user.getPhoneNumber(),user.getGender(),user.getAddress(), user.getPassword(), user.getCreatedAt(),user.getDateOfBirth(), user.getCreatedBy());
     }
 
+
+
+    // manage all user for admin
     @Override
     public List<User> findAllUserPagination(UserPaginationDTO dto) {
 
